@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>&lt;no title&gt; &#8212; a02tdd 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="a02tdd 0.1 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to a02tdd’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p>bruch module
+—&#8212;&#8212;&#8212;&#8212;—</p>
+<span class="target" id="module-bruch.Bruch"></span><p>Created on 22.10.2016</p>
+<p>some lines are commented out
+because &gt;95% coverage is wanted but no additional testcases,
+so to they cannot be tested =&gt; commented out to only have
+the specific functionality of the testcases provided
+(which are not 100% whole e.g TypeError on comparison,...)</p>
+<p>Coverage: 99%</p>
+<p>&#64;author: sagichnicht:P</p>
+<dl class="class">
+<dt id="bruch.Bruch.Bruch">
+<em class="property">class </em><code class="descclassname">bruch.Bruch.</code><code class="descname">Bruch</code><span class="sig-paren">(</span><em>z</em>, <em>n=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>The Bruch class is a utility-class for fractions</p>
+<dl class="method">
+<dt id="bruch.Bruch.Bruch._Bruch__makeBruch">
+<code class="descname">_Bruch__makeBruch</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch._Bruch__makeBruch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch._Bruch__makeBruch" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a new Bruch and does not need self</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new Bruch if right parameter</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__abs__">
+<code class="descname">__abs__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__abs__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__abs__" title="Permalink to this definition">¶</a></dt>
+<dd><p>makes an absolute positive Bruch out of this Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a new Bruch with an absolute (non -) value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__add__">
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__add__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__add__" title="Permalink to this definition">¶</a></dt>
+<dd><p>the standard + overwrite</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the other object that is added</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the object summed with the other object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__eq__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>comparison overwrite or the == operator</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object to compare with</td>
+</tr>
+</tbody>
+</table>
+<p>:return:True if == the same</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__float__">
+<code class="descname">__float__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__float__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__float__" title="Permalink to this definition">¶</a></dt>
+<dd><p>casts this object into float</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a float representation of this object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__ge__">
+<code class="descname">__ge__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__ge__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>comparison with &gt;= operator override</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object to compare to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if &gt;=</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__gt__">
+<code class="descname">__gt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__gt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>comparison with &gt; operator override</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object to compare to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__iadd__">
+<code class="descname">__iadd__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__iadd__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__iadd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>the += operator overwrite, uses the add function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the other object that is added</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the object summed with the other object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__imul__">
+<code class="descname">__imul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__imul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__imul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self multiplicaction and saving in itself</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the value to multiply itself with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the changed self object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>z</em>, <em>n=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor takes 2 arguments if just 1 sets the second to 1,
+to a whole fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>z</strong> &#8211; the numerator</li>
+<li><strong>n</strong> &#8211; the denominator</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__int__">
+<code class="descname">__int__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__int__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__int__" title="Permalink to this definition">¶</a></dt>
+<dd><p>casts this object into int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an int representation of this object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__invert__">
+<code class="descname">__invert__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__invert__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__invert__" title="Permalink to this definition">¶</a></dt>
+<dd><p>inverts the Bruch so that the numerator and denominator switch place</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the inverted object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__isub__">
+<code class="descname">__isub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__isub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__isub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>subtraction that changes the own object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the value to be subtracted from the own object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the changed self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__iter__">
+<code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__iter__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>iter method overload to allow iteration</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">own object that is iterable</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__itruediv__">
+<code class="descname">__itruediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__itruediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__itruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>itruediv /= overload, changes own object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the other value to divide with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">its changed self</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__le__">
+<code class="descname">__le__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__le__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>comparison with &lt;= operator override</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object to compare to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if &lt;=</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__lt__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>comparison with &lt; operator override</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object to compare to</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if &lt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__mul__">
+<code class="descname">__mul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__mul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>multiplication with another object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the value to multiply with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__neg__">
+<code class="descname">__neg__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__neg__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__neg__" title="Permalink to this definition">¶</a></dt>
+<dd><p>negates the object, negating the numerator</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the negated object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__next__">
+<code class="descname">__next__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__next__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__next__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>the next method that is needed for iteration</dt>
+<dd>iterates from Zaehler to Nenner</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Zaehler or Nenner</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__pow__">
+<code class="descname">__pow__</code><span class="sig-paren">(</span><em>power</em>, <em>modulo=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__pow__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__pow__" title="Permalink to this definition">¶</a></dt>
+<dd><p>multiplies with itself to the power of power</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>power</strong> &#8211; how often to multiply with itself</li>
+<li><strong>modulo</strong> &#8211; module if standard none</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the new Bruch that was raised to the power of power</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__radd__">
+<code class="descname">__radd__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__radd__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__radd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>the += operator overwrite, uses the add function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the other object that is added</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the object summed with the other object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rmul__">
+<code class="descname">__rmul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__rmul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__rmul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>right hand side multiplication uses multiply</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the value before to multiply with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new Bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rsub__">
+<code class="descname">__rsub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__rsub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__rsub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>right hand sided subtraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the value self should be subtracted from</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">new Bruch object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rtruediv__">
+<code class="descname">__rtruediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__rtruediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__rtruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>truediv / for the right hand side, Bruch is right argument</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the object that should be divided by Bruch</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">new solution bruch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>casts this object into into a string, (3/2) and if Nenner==1 (3)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">a string representation of this object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__sub__">
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__sub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>standard subtraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; value to be subtracted from the object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">new Bruch object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__truediv__">
+<code class="descname">__truediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bruch/Bruch.html#Bruch.__truediv__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bruch.Bruch.Bruch.__truediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>truediv for division / takes another Bruch or int as arguments</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> &#8211; the other value to divide with</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a new Bruch for the solution</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to a02tdd&#8217;s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/bruch.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, sagichnicht:P.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/bruch.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
