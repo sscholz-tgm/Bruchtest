@@ -326,6 +326,37 @@ class TestDivision(unittest.TestCase):
     def testiDivError(self):
         self.assertRaises(TypeError, self.b.__itruediv__, "other")
 
+class Test5Additional(unittest.TestCase):
+
+    def setUp(self):
+        self.b = Bruch(3, 2)
+        self.b2 = Bruch(self.b)
+        self.b3 = Bruch(4, 2)
+        pass
+
+    def tearDown(self):
+        del self.b, self.b2, self.b3
+        pass
+
+    def testConstructFloat(self):
+        with self.assertRaises(TypeError):
+            Bruch(1.0, 2)
+
+    def testConstructStr(self):
+        with self.assertRaises(TypeError):
+            Bruch("1", 2)
+
+    def testConstructChar(self):
+        with self.assertRaises(TypeError):
+            Bruch('!', 2)
+
+    def testConstructZeroDivision(self):
+        with self.assertRaises(ZeroDivisionError):
+            Bruch(1, 0)
+
+    def testConstructRecursive(self):
+        with self.assertRaises(TypeError):
+            Bruch(1, Bruch(1, 1))
 
 class TestIteration(unittest.TestCase):
 
